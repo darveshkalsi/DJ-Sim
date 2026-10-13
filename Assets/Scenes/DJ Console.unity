@@ -868,6 +868,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -21.36
       objectReference: {fileID: 0}
+    - target: {fileID: 806268914414598328, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
       propertyPath: m_Name
       value: Console
@@ -938,13 +942,13 @@ PrefabInstance:
       addedObject: {fileID: 426145575}
     - targetCorrespondingSourceObject: {fileID: 806268914414598328, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 267190716}
+    - targetCorrespondingSourceObject: {fileID: 806268914414598328, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 267190718}
     - targetCorrespondingSourceObject: {fileID: 806268914414598328, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
       insertIndex: -1
       addedObject: {fileID: 267190717}
-    - targetCorrespondingSourceObject: {fileID: 806268914414598328, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 267190716}
     - targetCorrespondingSourceObject: {fileID: 806268914414598328, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
       insertIndex: -1
       addedObject: {fileID: 267190715}
@@ -2161,7 +2165,6 @@ GameObject:
   - component: {fileID: 427185124}
   - component: {fileID: 427185123}
   - component: {fileID: 427185125}
-  - component: {fileID: 427185127}
   - component: {fileID: 427185126}
   m_Layer: 0
   m_Name: XR Origin
@@ -2196,7 +2199,7 @@ Transform:
   m_GameObject: {fileID: 427185122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.626, y: 7.51, z: 7.894}
+  m_LocalPosition: {x: 0.535, y: 7.649, z: 7.999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2217,8 +2220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!136 &427185126
-CapsuleCollider:
+--- !u!143 &427185126
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2232,41 +2235,16 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
+  serializedVersion: 3
   m_Height: 2
-  m_Direction: 1
+  m_Radius: 0
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &427185127
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427185122}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!1001 &437049976
 PrefabInstance:
   m_ObjectHideFlags: 0
