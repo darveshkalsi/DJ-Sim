@@ -8,7 +8,9 @@ public class WorldZDiscGrabTransformer : MonoBehaviour
     private XRGrabInteractable grabInteractable;
     private Transform handTransform;
 
+    private Vector3 startingPosition;
     private Quaternion startingRotation;
+
     private float previousHandAngle;
     private float accumulatedAngle;
 
@@ -25,6 +27,8 @@ public class WorldZDiscGrabTransformer : MonoBehaviour
 
     private void OnDisable()
     {
+        if (grabInteractable == null) return;
+
         grabInteractable.selectEntered.RemoveListener(OnGrab);
         grabInteractable.selectExited.RemoveListener(OnRelease);
     }
@@ -35,22 +39,24 @@ public class WorldZDiscGrabTransformer : MonoBehaviour
             args.interactableObject
         );
 
+        startingPosition = transform.position;
         startingRotation = transform.rotation;
+
         accumulatedAngle = 0f;
         previousHandAngle = GetHandAngle();
     }
 
     private float GetHandAngle()
     {
-        Vector3 offset = handTransform.position - transform.position;
+        Vector3 offset = Quaternion.Inverse(startingRotation) *
+            (handTransform.position - startingPosition);
 
         return Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
     }
 
     private void Update()
     {
-        if (handTransform == null)
-            return;
+        if (handTransform == null) return;
 
         float currentAngle = GetHandAngle();
 
@@ -61,9 +67,11 @@ public class WorldZDiscGrabTransformer : MonoBehaviour
 
         previousHandAngle = currentAngle;
 
+        transform.position = startingPosition;
+
         transform.rotation =
-            Quaternion.AngleAxis(accumulatedAngle, Vector3.forward)
-            * startingRotation;
+            startingRotation *
+            Quaternion.AngleAxis(accumulatedAngle, Vector3.forward);
     }
 
     private void OnRelease(SelectExitEventArgs args)
