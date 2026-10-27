@@ -876,6 +876,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4222140499866444148, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
       insertIndex: -1
       addedObject: {fileID: 611924918}
+    - targetCorrespondingSourceObject: {fileID: -4222140499866444148, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 611924919}
     - targetCorrespondingSourceObject: {fileID: -7956878214188305941, guid: 154f91715824c0f43b1210bc73cfb416, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1901209618}
@@ -2956,7 +2959,7 @@ MonoBehaviour:
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 8
   m_TightenPosition: 0.1
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 8
   m_TightenRotation: 0.1
@@ -3037,7 +3040,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 0
@@ -3056,7 +3059,7 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: 0
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
-  m_AllowOneHandedScaling: 1
+  m_AllowOneHandedScaling: 0
   m_AllowTwoHandedScaling: 0
   m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.05
@@ -3064,6 +3067,18 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &611924919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611924910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15a5784051d8f146b8edbaaf059c30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldZDiscGrabTransformer
 --- !u!1001 &615200027
 PrefabInstance:
   m_ObjectHideFlags: 0
