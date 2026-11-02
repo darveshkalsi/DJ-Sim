@@ -1,9 +1,54 @@
 fileFormatVersion: 2
-guid: 8a906375eca25bf4f874eefff9dd902b
+guid: 32a1145c22f5b9b4a91281b94830a807
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FitGrandma_Brows_MAT1
+    second: {fileID: 2100000, guid: 47f5c30ef88adb847a78df2fd6b032a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FitGrandma_Eyes_MAT1
+    second: {fileID: 2100000, guid: fcbaf357e13a9d3428979124275db0c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FitGrandma_Mouth_MAT1
+    second: {fileID: 2100000, guid: a005afa16c0bbb5458dbcd2a52679d0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grandma_MAT
+    second: {fileID: 2100000, guid: 00ff65009448d0e45833ee1feae507d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lens_MAT
+    second: {fileID: 2100000, guid: f0d8511bd86bf7b41b429f5833e8eabf, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FitnessGrandma_FaceAnimMap
+    second: {fileID: 2800000, guid: a60643e0b3c0d264a8af48825dd86dde, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FitnessGrandma_diffuse
+    second: {fileID: 2800000, guid: ba54ffa5223c7b040943090c61040e30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FitnessGrandma_normal
+    second: {fileID: 2800000, guid: 0f4195d3709c9334d994ab46e94bff2a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FitnessGrandma_spec
+    second: {fileID: 2800000, guid: 99971d733b611d74380fb1d53974ef9e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

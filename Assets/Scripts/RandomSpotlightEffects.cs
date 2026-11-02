@@ -7,8 +7,8 @@ public class RandomSpotlightEffects : MonoBehaviour
     public Light beamLight;
 
     [Header("Rotation Speed")]
-    public float minRotationSpeed = 15f;
-    public float maxRotationSpeed = 100f;
+    public float minRotationSpeed = 50f;
+    public float maxRotationSpeed = 150f;
 
     [Header("Dance Floor Rotation")]
     public float floorRotationX = 0f;
@@ -16,35 +16,35 @@ public class RandomSpotlightEffects : MonoBehaviour
     public float floorRotationZ = 0f;
 
     [Header("Rotation Variation")]
-    public float maxXVariation = 20f;
-    public float maxYVariation = 45f;
+    public float maxXVariation = 50f;
+    public float maxYVariation = 80f;
 
     [Header("Time On Dance Floor")]
-    public float minFloorTime = 8f;
-    public float maxFloorTime = 15f;
+    public float minFloorTime = 1f;
+    public float maxFloorTime = 3f;
 
     [Header("Occasional Random Movement")]
-    public float minRandomTime = 2f;
-    public float maxRandomTime = 4f;
+    public float minRandomTime = 1f;
+    public float maxRandomTime = 3f;
 
     [Range(0f, 1f)]
     public float floorMovementChance = 0.8f;
 
     [Header("Brightness Settings")]
-    public float minIntensity = 100f;
-    public float maxIntensity = 120f;
+    public float minIntensity = 800f;
+    public float maxIntensity = 900f;
 
     [Header("Range Settings")]
     public float lightRange = 30f;
-    public float spotAngle = 60f;
+    public float spotAngle = 40f;
 
     [Header("Random Colour Timing")]
-    public float minColorTime = 2f;
-    public float maxColorTime = 5f;
+    public float minColorTime = 1f;
+    public float maxColorTime = 3f;
 
     [Header("Colour Transition Speed")]
     public float minColorSpeed = 1f;
-    public float maxColorSpeed = 4f;
+    public float maxColorSpeed = 2f;
 
     [Header("Nightclub Colours")]
     public Color[] nightclubColors =
